@@ -4,10 +4,10 @@ import (
 	"io"
 	"log"
 
-	"github.com/gostores/storage/qiniu/api/rsf"
-	"github.com/gostores/storage/qiniu/rpc"
+	"github.com/govenue/storage/qiniu/api/rsf"
+	"github.com/govenue/storage/qiniu/rpc"
 
-	. "github.com/gostores/storage/qiniu/api/conf"
+	. "github.com/govenue/storage/qiniu/api/conf"
 )
 
 func init() {

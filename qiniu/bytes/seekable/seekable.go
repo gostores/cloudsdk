@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	"github.com/gostores/storage/qiniu/bytes"
+	"github.com/govenue/storage/qiniu/bytes"
 )
 
 // ---------------------------------------------------

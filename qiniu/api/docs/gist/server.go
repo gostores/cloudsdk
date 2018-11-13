@@ -1,9 +1,9 @@
 package gist
 
-import "github.com/gostores/storage/qiniu/api/rs"
+import "github.com/govenue/storage/qiniu/api/rs"
 
 // @gist init-import
-import . "github.com/gostores/storage/qiniu/api/conf"
+import . "github.com/govenue/storage/qiniu/api/conf"
 
 // @endgist
 

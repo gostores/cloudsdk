@@ -4,8 +4,8 @@ import (
 	gio "io"
 	"log"
 
-	"github.com/gostores/storage/qiniu/api/io"
-	rio "github.com/gostores/storage/qiniu/api/resumable/io"
+	"github.com/govenue/storage/qiniu/api/io"
+	rio "github.com/govenue/storage/qiniu/api/resumable/io"
 )
 
 func uploadFileDemo(localFile, key, uptoken string) {
@@ -13,10 +13,10 @@ func uploadFileDemo(localFile, key, uptoken string) {
 	var err error
 	var ret io.PutRet
 	var extra = &io.PutExtra{
-	// Params:   params,
-	// MimeType: mieType,
-	// Crc32:    crc32,
-	// CheckCrc: CheckCrc,
+		// Params:   params,
+		// MimeType: mieType,
+		// Crc32:    crc32,
+		// CheckCrc: CheckCrc,
 	}
 
 	// ret       变量用于存取返回的信息，详情见 io.PutRet
@@ -42,10 +42,10 @@ func uploadFileWithoutKeyDemo(localFile, uptoken string) {
 	var err error
 	var ret io.PutRet
 	var extra = &io.PutExtra{
-	// Params:   params,
-	// MimeType: mieType,
-	// Crc32:    crc32,
-	// CheckCrc: CheckCrc,
+		// Params:   params,
+		// MimeType: mieType,
+		// Crc32:    crc32,
+		// CheckCrc: CheckCrc,
 	}
 
 	// ret       变量用于存取返回的信息，详情见 io.PutRet
@@ -70,10 +70,10 @@ func uploadBufWithoutKeyDemo(r gio.Reader, key, uptoken string) {
 	var err error
 	var ret io.PutRet
 	var extra = &io.PutExtra{
-	// Params:   params,
-	// MimeType: mieType,
-	// Crc32:    crc32,
-	// CheckCrc: CheckCrc,
+		// Params:   params,
+		// MimeType: mieType,
+		// Crc32:    crc32,
+		// CheckCrc: CheckCrc,
 	}
 
 	// ret       变量用于存取返回的信息，详情见 io.PutRet
@@ -98,10 +98,10 @@ func uploadBufDemo(r gio.Reader, key, uptoken string) {
 	var err error
 	var ret io.PutRet
 	var extra = &io.PutExtra{
-	// Params:   params,
-	// MimeType: mieType,
-	// Crc32:    crc32,
-	// CheckCrc: CheckCrc,
+		// Params:   params,
+		// MimeType: mieType,
+		// Crc32:    crc32,
+		// CheckCrc: CheckCrc,
 	}
 
 	// ret       变量用于存取返回的信息，详情见 io.PutRet
@@ -127,13 +127,13 @@ func resumableUploadFileDemo(localFile, key, uptoken string) {
 	var err error
 	var ret rio.PutRet
 	var extra = &rio.PutExtra{
-	// Params:     params,
-	// MimeType:   mieType,
-	// ChunkSize:  chunkSize,
-	// TryTimes:   tryTimes,
-	// Progresses: progresses,
-	// Notify:     notify,
-	// NotifyErr:  NotifyErr,
+		// Params:     params,
+		// MimeType:   mieType,
+		// ChunkSize:  chunkSize,
+		// TryTimes:   tryTimes,
+		// Progresses: progresses,
+		// Notify:     notify,
+		// NotifyErr:  NotifyErr,
 	}
 
 	// ret       变量用于存取返回的信息，详情见 resumable.io.PutRet
@@ -159,13 +159,13 @@ func resumableUploadBufDemo(r gio.ReaderAt, fsize int64, key, uptoken string) {
 	var err error
 	var ret rio.PutRet
 	var extra = &rio.PutExtra{
-	// Params:     params,
-	// MimeType:   mieType,
-	// ChunkSize:  chunkSize,
-	// TryTimes:   tryTimes,
-	// Progresses: progresses,
-	// Notify:     notify,
-	// NotifyErr:  NotifyErr,
+		// Params:     params,
+		// MimeType:   mieType,
+		// ChunkSize:  chunkSize,
+		// TryTimes:   tryTimes,
+		// Progresses: progresses,
+		// Notify:     notify,
+		// NotifyErr:  NotifyErr,
 	}
 
 	// ret       变量用于存取返回的信息，详情见 resumable.io.PutRet

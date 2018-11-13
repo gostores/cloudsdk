@@ -3,7 +3,7 @@ package gist
 import (
 	"log"
 
-	"github.com/gostores/storage/qiniu/api/fop"
+	"github.com/govenue/storage/qiniu/api/fop"
 )
 
 // @gist makeImageInfoUrl
@@ -64,11 +64,11 @@ func getExif(imageUrl string) {
 // @gist makeViewUrl
 func makeViewUrl(imageUrl string) string {
 	var view = fop.ImageView{
-	// Mode    int    缩略模式
-	// Width   int    Width = 0 表示不限定宽度
-	// Height  int    Height = 0 表示不限定高度
-	// Quality int    质量, 1-100
-	// Format  string 输出格式，如jpg, gif, png, tif等等
+		// Mode    int    缩略模式
+		// Width   int    Width = 0 表示不限定宽度
+		// Height  int    Height = 0 表示不限定高度
+		// Quality int    质量, 1-100
+		// Format  string 输出格式，如jpg, gif, png, tif等等
 	}
 	return view.MakeRequest(imageUrl)
 }

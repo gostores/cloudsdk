@@ -1,7 +1,7 @@
 package fop
 
 import (
-	"github.com/gostores/storage/qiniu/rpc"
+	"github.com/govenue/storage/qiniu/rpc"
 )
 
 type ImageInfoRet struct {

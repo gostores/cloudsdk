@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gostores/storage/qiniu/api/auth/digest"
-	"github.com/gostores/storage/qiniu/api/url"
+	"github.com/govenue/storage/qiniu/api/auth/digest"
+	"github.com/govenue/storage/qiniu/api/url"
 )
 
 // ----------------------------------------------------------

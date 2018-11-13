@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"testing"
 
-	. "github.com/gostores/storage/qiniu/api/conf"
-	qio "github.com/gostores/storage/qiniu/api/io"
-	"github.com/gostores/storage/qiniu/api/rs"
+	. "github.com/govenue/storage/qiniu/api/conf"
+	qio "github.com/govenue/storage/qiniu/api/io"
+	"github.com/govenue/storage/qiniu/api/rs"
 )
 
 var (
